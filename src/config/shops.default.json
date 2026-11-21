@@ -1,0 +1,14 @@
+[
+  { "name": "Perfume Palace", "searchUrl": "https://perfumepalace.in/search?q={query}" },
+  { "name": "Friday Charm", "searchUrl": "https://www.fridaycharm.com/search?q={query}" },
+  { "name": "Perfume Addiction", "searchUrl": "https://perfumeaddiction.com/search?q={query}" },
+  { "name": "Perfume Network", "searchUrl": "https://www.perfumenetwork.in/search?q={query}" },
+  { "name": "AAR Fragrances", "searchUrl": "https://www.aarfragrances.com/search?q={query}" },
+  { "name": "Scentira", "searchUrl": "https://scentira.in/search?q={query}" },
+  { "name": "Splash Fragrance", "searchUrl": "https://splashfragrance.in/?s={query}&post_type=product" },
+  { "name": "Belvish", "searchUrl": "https://belvish.com/search?q={query}" },
+  { "name": "Fragstalk", "searchUrl": "https://fragstalk.in/search?q={query}" },
+  { "name": "MOM Perfumes", "searchUrl": "https://momperfume.in/search?q={query}" },
+  { "name": "Amazon", "searchUrl": "https://www.amazon.in/s?k={query}" },
+  { "name": "Nykaa", "searchUrl": "https://www.nykaa.com/search/result/?q={query}" }
+]

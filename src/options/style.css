@@ -1,0 +1,46 @@
+:root {
+  --bg: #ffffff;
+  --fg: #1f2330;
+  --muted: #6b7280;
+  --card: #f6f5fb;
+  --border: #e3e0f0;
+  --accent: #7c3aed;
+  --ok: #067647;
+  --error: #b42318;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15151c;
+    --fg: #ececf3;
+    --muted: #9aa0ae;
+    --card: #1e1e28;
+    --border: #2d2d3b;
+    --accent: #a78bfa;
+    --ok: #47cd89;
+    --error: #f97066;
+  }
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 14px/1.5 system-ui, -apple-system, 'Segoe UI', sans-serif; }
+main { max-width: 640px; margin: 0 auto; padding: 24px 16px 48px; }
+h1 { font-size: 20px; }
+h2 { font-size: 16px; margin: 0 0 8px; }
+section { border: 1px solid var(--border); background: var(--card); border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+label { display: block; margin: 10px 0; font-weight: 600; }
+input, select { display: block; width: 100%; margin-top: 4px; padding: 6px 8px; font: inherit; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--fg); }
+button { font: inherit; cursor: pointer; border: 1px solid var(--border); background: var(--bg); color: var(--fg); border-radius: 8px; padding: 6px 12px; }
+button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.hint { color: var(--muted); margin: 0 0 8px; }
+.row { display: flex; align-items: center; gap: 12px; margin: 10px 0; }
+code { background: var(--bg); padding: 1px 6px; border-radius: 6px; border: 1px solid var(--border); word-break: break-all; }
+.ok { color: var(--ok); }
+.err { color: var(--error); }
+#key-saved { display: flex; align-items: center; gap: 12px; margin: 10px 0; }
+#key-mask { font-family: ui-monospace, Consolas, monospace; }
+
+#shop-list { list-style: none; margin: 0 0 12px; padding: 0; }
+.shop-item { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 8px 0; border-top: 1px solid var(--border); }
+.shop-item:first-child { border-top: none; }
+.shop-item .hint { margin: 0; word-break: break-all; }
+.tag { display: inline-block; margin-top: 4px; font-size: 11px; padding: 1px 8px; border-radius: 99px; background: rgba(217, 119, 6, .18); }

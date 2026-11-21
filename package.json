@@ -1,0 +1,26 @@
+{
+  "name": "perfume-companion",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Chrome side panel that shows perfume notes, dupes and prices.",
+  "scripts": {
+    "build": "tsc --noEmit && vite build && node scripts/check-no-secrets.mjs",
+    "dev": "vite build --watch",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc --noEmit",
+    "icons": "node scripts/make-icons.mjs",
+    "e2e": "node e2e/phase1.mjs",
+    "e2e:phase23": "node e2e/phase23.mjs",
+    "e2e:real": "node e2e/real.mjs"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.3.7",
+    "@types/node": "^26.6.6",
+    "jsdom": "^31.0.1",
+    "playwright": "^1.65.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.1"
+  }
+}

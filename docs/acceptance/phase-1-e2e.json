@@ -1,0 +1,166 @@
+{
+  "when": "2026-11-21T13:35:13.374Z",
+  "results": [
+    {
+      "id": "FR1-idle",
+      "name": "No network requests, no UI and no content scripts before the icon is clicked",
+      "pass": true,
+      "skipped": false,
+      "detail": "service worker requests: 0, panel open: false, content_scripts in manifest: false"
+    },
+    {
+      "id": "FR1-restricted",
+      "name": "chrome:// page shows \"can't be read\"",
+      "pass": true,
+      "skipped": false,
+      "detail": "This page can't be read. Open a perfume page on a website and click the icon again."
+    },
+    {
+      "id": "LLM-origin",
+      "name": "Ollama 403 tells the user to set OLLAMA_ORIGINS with the exact origin, with Retry",
+      "pass": true,
+      "skipped": false,
+      "detail": "Ollama is running but blocked this extension. Set OLLAMA_ORIGINS to include chrome-extension://bgoikennilhjhninenmelipcmmdlbokp and restart Ollama.Retry"
+    },
+    {
+      "id": "LLM-badkey",
+      "name": "A rejected Gemini key is reported, not hidden behind the Ollama fallback",
+      "pass": true,
+      "skipped": false,
+      "detail": "Gemini rejected the API key. Check it in Options.Retry"
+    },
+    {
+      "id": "FR2-fragrantica",
+      "name": "Dior Sauvage: name and brand detected",
+      "pass": true,
+      "skipped": false,
+      "detail": "heading \"Sauvage – Dior\", 103s"
+    },
+    {
+      "id": "FR3-fragrantica",
+      "name": "Notes card: Top/Heart/Base from the page and a 1-3 sentence description",
+      "pass": true,
+      "skipped": false,
+      "detail": "2 sentence(s): \"This perfume starts with a bright, citrusy freshness from the bergamot that quickly turns spicy and sharp due to the heavy pepper notes. As it settles, you get a mix of floral lavender and earthy vetiver before finishing with a long-lasting, sweet, and salty woody scent.\" | tiers: Top=[Calabrian bergamot, Pepper] Heart=[Sichuan Pepper, Lavender, Pink Pepper, Vetiver, Patchouli, Geranium, Elemi] Base=[Ambroxan, Cedar, Labdanum]"
+    },
+    {
+      "id": "FR3-page-notes-first",
+      "name": "Notes listed on the page are used as-is (Fragrantica top notes)",
+      "pass": true,
+      "skipped": false,
+      "detail": "Top = [Calabrian bergamot, Pepper]"
+    },
+    {
+      "id": "FR2-fragrantica-badge",
+      "name": "\"Using local model\" badge shown when Ollama answered",
+      "pass": true,
+      "skipped": false,
+      "detail": ""
+    },
+    {
+      "id": "FR2-amazon",
+      "name": "Dior Sauvage: name and brand detected",
+      "pass": true,
+      "skipped": false,
+      "detail": "heading \"Sauvage – Dior\", 64s"
+    },
+    {
+      "id": "FR3-amazon",
+      "name": "Notes card: notes (no ingredient names) and a 1-3 sentence description",
+      "pass": true,
+      "skipped": false,
+      "detail": "2 sentence(s): \"It starts with a sharp, spicy kick from black pepper that quickly mixes with sweet tropical fruit and fresh citrus. As it settles, you get a clean, herbal scent reminiscent of lavender and lemon grass, which then transforms into a long-lasting, warm, and slightly smoky finish.\" | tiers: Top=[bergamot, pineapple, pepper] Heart=[lavender, jasmine, lemon grass] Base=[saffron, patchouli, ambroxan]"
+    },
+    {
+      "id": "FR2-amazon-badge",
+      "name": "\"Using local model\" badge shown when Ollama answered",
+      "pass": true,
+      "skipped": false,
+      "detail": ""
+    },
+    {
+      "id": "FR2-nykaa",
+      "name": "Chanel Bleu de Chanel: name and brand detected",
+      "pass": true,
+      "skipped": false,
+      "detail": "heading \"Bleu De Chanel – CHANEL\", 60s"
+    },
+    {
+      "id": "FR3-nykaa",
+      "name": "Notes card: notes (no ingredient names) and a 1-3 sentence description",
+      "pass": true,
+      "skipped": false,
+      "detail": "2 sentence(s): \"This perfume smells like a crisp, salty breeze mixed with fresh pine and citrus. It has a clean, aquatic feel that is light and refreshing.\" | tiers: Top=[citrus, pine] Heart=[lavender, lemon grass] Base=[ocean, woody]"
+    },
+    {
+      "id": "FR2-nykaa-badge",
+      "name": "\"Using local model\" badge shown when Ollama answered",
+      "pass": true,
+      "skipped": false,
+      "detail": ""
+    },
+    {
+      "id": "FR2-none",
+      "name": "A news article shows \"No perfume detected on this page\" and no cards",
+      "pass": true,
+      "skipped": false,
+      "detail": "No perfume detected on this page"
+    },
+    {
+      "id": "FR2-real-fragrantica",
+      "name": "Real fragrantica.com page",
+      "pass": true,
+      "skipped": true,
+      "detail": "site blocked the headless browser (\"Just a moment...\")"
+    },
+    {
+      "id": "FR1-close",
+      "name": "Closing the panel mid-lookup raises no errors",
+      "pass": true,
+      "skipped": false,
+      "detail": ""
+    },
+    {
+      "id": "OPT-mask",
+      "name": "Saved key is masked, only the last 4 characters visible",
+      "pass": true,
+      "skipped": false,
+      "detail": "shown as \"••••••••••••WXYZ\""
+    },
+    {
+      "id": "OPT-test-ok",
+      "name": "Test connection reports the model count and lists models",
+      "pass": true,
+      "skipped": false,
+      "detail": "Connected. 4 models found. | dropdown: Auto (picked: qwen3.5:4b), qwen3:8b, deepseek-v4.1-flash:cloud, qwen3.5:4b, llama3.2:latest"
+    },
+    {
+      "id": "OPT-auto-local",
+      "name": "Auto-pick chooses a local model, not the cloud one",
+      "pass": true,
+      "skipped": false,
+      "detail": "Auto (picked: qwen3.5:4b)"
+    },
+    {
+      "id": "OPT-test-origin",
+      "name": "Test connection explains a blocked origin",
+      "pass": true,
+      "skipped": false,
+      "detail": "Ollama blocked this extension. Set OLLAMA_ORIGINS to include chrome-extension://bgoikennilhjhninenmelipcmmdlbokp and restart Ollama."
+    },
+    {
+      "id": "OPT-test-down",
+      "name": "Test connection explains Ollama not running",
+      "pass": true,
+      "skipped": false,
+      "detail": "Could not reach Ollama at http://127.0.0.1:9. Is it running?"
+    },
+    {
+      "id": "OPT-persist",
+      "name": "Settings survive a browser restart",
+      "pass": true,
+      "skipped": false,
+      "detail": "key after restart: present"
+    }
+  ]
+}

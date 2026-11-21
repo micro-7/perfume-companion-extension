@@ -1,0 +1,360 @@
+{
+  "when": "2026-11-21T13:41:26.637Z",
+  "live": false,
+  "results": [
+    {
+      "id": "FR6-remove-key",
+      "name": "Remove key deletes the saved Gemini key at once (and it stays gone after reload)",
+      "pass": true,
+      "detail": "mask shown before: true, stored key: \"\", empty entry box after reload: true"
+    },
+    {
+      "id": "FR6-empty",
+      "name": "Options shows an empty shop list at first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "id": "FR6-add",
+      "name": "A valid shop is added and shown",
+      "pass": true,
+      "detail": "Added Perfume Palace."
+    },
+    {
+      "id": "FR6-add-stored",
+      "name": "It is saved with its domain and direct access",
+      "pass": true,
+      "detail": "{\"directAccess\":true,\"domain\":\"perfumepalace.in\",\"id\":\"perfumepalace.in\",\"name\":\"Perfume Palace\",\"searchUrl\":\"https://www.perfumepalace.in/search?q={query}\"}"
+    },
+    {
+      "id": "FR6-no-query",
+      "name": "Rejected with an inline error (no-query)",
+      "pass": true,
+      "detail": "The address must contain {query} where the search words go."
+    },
+    {
+      "id": "FR6-http",
+      "name": "Rejected with an inline error (http)",
+      "pass": true,
+      "detail": "The address must start with https://"
+    },
+    {
+      "id": "FR6-no-name",
+      "name": "Rejected with an inline error (no-name)",
+      "pass": true,
+      "detail": "Enter a shop name."
+    },
+    {
+      "id": "FR6-duplicate",
+      "name": "Rejected with an inline error (duplicate)",
+      "pass": true,
+      "detail": "perfumepalace.in is already in the list."
+    },
+    {
+      "id": "FR6-remove",
+      "name": "A shop is removed",
+      "pass": true,
+      "detail": "Perfume Palace, Tata CLiQ"
+    },
+    {
+      "id": "FR6-persist",
+      "name": "The list is unchanged after a full browser restart",
+      "pass": true,
+      "detail": "Perfume Palace, Tata CLiQ"
+    },
+    {
+      "id": "FR5-sorted",
+      "name": "Prices are sorted cheapest first",
+      "pass": true,
+      "detail": "Shop C > Shop D > Shop A > Amazon > Shop B > Shop E | 7999, 8100, 8750, 9200, 9450"
+    },
+    {
+      "id": "FR5-expected",
+      "name": "The right shops and prices are shown",
+      "pass": true,
+      "detail": "Shop C Shop C: ₹7,999you save ₹1,201 compared w | Shop D Shop D: ₹8,100you save ₹1,100 compared w | Shop A Shop A: ₹8,750you save ₹450 compared wit | Amazon Amazon: ₹9,200You are here | Shop B Shop B: ₹9,450"
+    },
+    {
+      "id": "FR5-bottom",
+      "name": "A shop that does not list the perfume is \"Not found\" at the bottom",
+      "pass": true,
+      "detail": "Shop ENot foundthe perfume is not on the shop page; web search: the perfume is not on the shop page"
+    },
+    {
+      "id": "FR5-savings",
+      "name": "Savings against the current site (₹9,200) are calculated correctly",
+      "pass": true,
+      "detail": "C=\"you save ₹1,201 compared with Amazon\" D=\"you save ₹1,100 compared with Amazon\" A=\"you save ₹450 compared with Amazon\" Amazon=\"\" B=\"\""
+    },
+    {
+      "id": "FR5-here",
+      "name": "The shop the user is on is marked \"You are here\"",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "id": "FR5-via-search",
+      "name": "A blocked shop is filled by web search and marked \"via search\"",
+      "pass": true,
+      "detail": "Shop D tags: via search"
+    },
+    {
+      "id": "FR5-progress",
+      "name": "The card ends with \"6 of 6 shops checked\"",
+      "pass": true,
+      "detail": "6 of 6 shops checked"
+    },
+    {
+      "id": "FR5-links",
+      "name": "Each link opens that shop's product page for the perfume",
+      "pass": true,
+      "detail": "Shop C: \"Dior Sauvage Eau de Toilette Spray 100ml\" | Shop A: \"Dior Sauvage Eau de Toilette 100ml\" | Amazon: \"Dior Sauvage Eau de Toilette 100ml\""
+    },
+    {
+      "id": "FR5-key-private",
+      "name": "The API key is sent in a header, never in the URL",
+      "pass": true,
+      "detail": "18 Gemini calls"
+    },
+    {
+      "id": "FR5-only-shops",
+      "name": "Only the configured shops were searched, each for the perfume, except the shop you are on (its price comes from the page)",
+      "pass": true,
+      "detail": "5 searches for Sauvage on shop-a.test, shop-b.test, shop-c.test, shop-d.test, shop-e.test"
+    },
+    {
+      "id": "FR5-cache",
+      "name": "A second lookup reuses cached prices (only the shop with no result is searched again)",
+      "pass": true,
+      "detail": "searched again: shop-e.test"
+    },
+    {
+      "id": "FR5-empty",
+      "name": "An empty shop list shows \"No shops configured\" with a link to Options",
+      "pass": true,
+      "detail": "PricesNo shops configured. Add shops in Options"
+    },
+    {
+      "id": "FR4-count",
+      "name": "The Dupes card shows 2 to 5 ranked dupes",
+      "pass": true,
+      "detail": "Club de Nuit Intense Man – Armaf > Y – Yves Saint Laurent > Bleu de Chanel Eau de Parfum – Chanel > Eros – Versace"
+    },
+    {
+      "id": "FR4-order",
+      "name": "The dupe confirmed by both sources ranks first; the flanker \"Sauvage Elixir\" is removed; the two spellings of Club de Nuit are merged into one entry with the brand shown once",
+      "pass": true,
+      "detail": "Club de Nuit Intense Man – Armaf > Y – Yves Saint Laurent > Bleu de Chanel Eau de Parfum – Chanel > Eros – Versace"
+    },
+    {
+      "id": "FR4-confirmed",
+      "name": "Dupes found by both the AI and Fragrantica are marked, others are not",
+      "pass": true,
+      "detail": "Club de Nuit Intense Man:true, Y:true, Bleu de Chanel Eau de Parfum:false, Eros:false"
+    },
+    {
+      "id": "FR4-on-fragrantica-mark",
+      "name": "A dupe that is only on Fragrantica's list (Bleu de Chanel) says so; an AI-only one (Eros) has no Fragrantica mark",
+      "pass": true,
+      "detail": "Club de Nuit Intense Man: confirmed | Y: confirmed | Bleu de Chanel Eau de Parfum: on list | Eros: no mark"
+    },
+    {
+      "id": "FR4-similarity",
+      "name": "Each dupe shows a similarity indicator",
+      "pass": true,
+      "detail": "85% similar, 72% similar, 76% similar, 60% similar"
+    },
+    {
+      "id": "FR4-price-best",
+      "name": "A dupe shows its best price from the shop list, with a link (Shop C ₹2,400 beats Shop D ₹2,500 and Shop A ₹2,650)",
+      "pass": true,
+      "detail": "₹2,400 at Shop C -> http://shop-c.test:54638/p/cdnim-105"
+    },
+    {
+      "id": "FR4-price-missing",
+      "name": "\"Price not found\" for a dupe no shop lists",
+      "pass": true,
+      "detail": "₹2,400 at Shop C | Price not found | Price not found | Price not found"
+    },
+    {
+      "id": "FR4-batch",
+      "name": "Dupe prices use one batch call per dupe (not one per shop)",
+      "pass": true,
+      "detail": "dupes=4 batch=4 gbatch=4 | Sauvage prices: direct=4 (4 usable shop pages; the shop you are on needs no lookup) search=2 (blocked or not listed)"
+    },
+    {
+      "id": "FR4-explore",
+      "name": "Clicking a dupe runs the full lookup for it, with a Back button",
+      "pass": true,
+      "detail": "Club de Nuit Intense Man – Armaf | ← Back to Sauvage | 6 price rows | dupes: Aventus – Creed, Sauvage – Dior"
+    },
+    {
+      "id": "FR4-explore-prices",
+      "name": "The dupe's own prices are shown, cheapest first (₹2,400 at Shop C, ₹2,500 via search at Shop D, ₹2,650, ₹2,900)",
+      "pass": true,
+      "detail": "Shop C ₹2,400 | Shop D ₹2,500 | Shop A ₹2,650 | Amazon ₹2,900 | Shop B - | Shop E -"
+    },
+    {
+      "id": "FR4-explore-savings",
+      "name": "Without a current site, savings are measured against the most expensive shop price (Amazon ₹2,900)",
+      "pass": true,
+      "detail": "you save ₹500 compared with Amazon | Savings are compared with the most expensive shop (Amazon)."
+    },
+    {
+      "id": "FR4-back",
+      "name": "Back shows the original perfume again, with its prices, dupes and savings",
+      "pass": true,
+      "detail": "Sauvage – Dior | 6 rows | 4 dupes | you save ₹1,201 compared with Amazon"
+    },
+    {
+      "id": "FR4-back-no-requests",
+      "name": "Back makes no new requests (no AI calls, no shop searches)",
+      "pass": true,
+      "detail": "AI calls 29->29, shop hits 44->44"
+    },
+    {
+      "id": "FR4-back-hidden",
+      "name": "The Back button is gone once back at the start",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "id": "FR4-fragrantica-page",
+      "name": "On a Fragrantica page the list is read from the page (no web search for it)",
+      "pass": true,
+      "detail": "Club de Nuit Intense Man – Armaf > Y – Yves Saint Laurent > Bleu de Chanel Eau de Parfum – Chanel > Eros – Versace | calls: detect, notes, dupes, frag-page, price, gprice, batch, gbatch"
+    },
+    {
+      "id": "FR4-list-not-loaded",
+      "name": "On a Fragrantica page whose list has not loaded, the card says so and asks the user to scroll",
+      "pass": true,
+      "detail": "DupesFragrantica's \"This perfume reminds me of\" list wasn't on the page when you clicked (it may load only as you scroll to it). Scroll down to it and click the"
+    },
+    {
+      "id": "FR4-no-guesses",
+      "name": "No dupe is marked as confirmed by Fragrantica, and the AI was not asked to read a list that is not there",
+      "pass": true,
+      "detail": "3 AI dupes, calls: detect, notes, dupes, price, gprice, batch, gbatch"
+    },
+    {
+      "id": "FR4-long-list",
+      "name": "Every perfume of a long Fragrantica row is listed (not cut to 5)",
+      "pass": true,
+      "detail": "17 dupes shown"
+    },
+    {
+      "id": "FR4-auto-4",
+      "name": "Only the first 4 are priced automatically; the rest offer \"Check price\"",
+      "pass": true,
+      "detail": "13 \"Check price\" buttons for 17 dupes"
+    },
+    {
+      "id": "FR4-check-price",
+      "name": "Clicking \"Check price\" prices just that dupe (button gone, an answer shown)",
+      "pass": true,
+      "detail": "buttons 13 -> 12; dupe 5 now says: Price not found"
+    },
+    {
+      "id": "FR4-lazy-row",
+      "name": "A row that appears only on scroll is loaded by the extension and read (confirmed dupe first)",
+      "pass": true,
+      "detail": "row on page before: false, first confirmed: true, frag-page asked: true, note shows not-on-page: false, dupes: Club de Nuit Intense Man – Armaf [confirmed] > Y – Yves Saint Laurent [confirmed] > Bleu de Chanel Eau de Parfum – Chanel > Eros – Versace, AI calls: detect,notes,dupes,frag-page,price,gprice,batch,gbatch"
+    },
+    {
+      "id": "FR4-lazy-scroll-back",
+      "name": "The page is scrolled back to where the user had it (top)",
+      "pass": true,
+      "detail": "scrollY after: 0"
+    },
+    {
+      "id": "FR4-ai-only",
+      "name": "Without Fragrantica data the card still lists AI dupes and says so",
+      "pass": true,
+      "detail": "Club de Nuit Intense Man – Armaf > Y – Yves Saint Laurent > Eros – Versace"
+    },
+    {
+      "id": "FR4-error-isolated",
+      "name": "A failing dupe lookup shows an error with Retry while Notes and Prices still work",
+      "pass": true,
+      "detail": "DupesThe AI returned an answer I could not read. Try again.Retry"
+    },
+    {
+      "id": "FR4-retry",
+      "name": "Retry fills the Dupes card without redoing the other cards",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "id": "CURRENCY-no-invented",
+      "name": "The AI's converted figure (15,500, from EUR 151) is not shown as a price anywhere",
+      "pass": true,
+      "detail": "rows: Shop C ₹7,999 | Shop D ₹8,100 | Shop A ₹8,750 | Amazon ₹9,200 | Shop B ₹9,450 | Shop E -"
+    },
+    {
+      "id": "CURRENCY-honest-savings",
+      "name": "Savings use the shop's own real price (Shop A, 8,750) as the baseline, never the invented one",
+      "pass": true,
+      "detail": "C=\"you save ₹751 compared with Shop A\" D=\"you save ₹650 compared with Shop A\""
+    },
+    {
+      "id": "CURRENCY-shop-still-priced",
+      "name": "The shop you are on is still priced from its own search page, in rupees",
+      "pass": true,
+      "detail": "Shop A: ₹8,750You are here"
+    },
+    {
+      "id": "CURRENCY-no-baseline",
+      "name": "On a page that shows euros and is not one of your shops: no savings, and the card says the page's price could not be read",
+      "pass": true,
+      "detail": "0 rows with savings"
+    },
+    {
+      "id": "WORKER-premise",
+      "name": "The worker was stopped while a lookup was still running (cards were still loading)",
+      "pass": true,
+      "detail": "cards still loading when stopped: 2"
+    },
+    {
+      "id": "WORKER-recovered",
+      "name": "The panel reconnects by itself and finishes the lookup: all 6 shops and the dupes are there",
+      "pass": true,
+      "detail": "6 price rows, 4 dupes, status text: \"\""
+    },
+    {
+      "id": "WORKER-reconnecting",
+      "name": "It said \"Reconnecting\" while it did so (it did not freeze on a spinner)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "id": "WORKER-resumed",
+      "name": "The lookup was run again for the same page after reconnecting",
+      "pass": true,
+      "detail": "detection requests: 2"
+    },
+    {
+      "id": "WORKER-no-spinner",
+      "name": "Nothing is left spinning",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "id": "WORKER-click-after-stop",
+      "name": "After the worker was stopped, clicking a dupe opens that dupe (not the original page again)",
+      "pass": true,
+      "detail": "was \"Sauvage – Dior\", clicked \"Club de Nuit Intense Man\", now \"Club de Nuit Intense Man – Armaf\""
+    },
+    {
+      "id": "WORKER-click-back",
+      "name": "Back then returns to the original",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "id": "WORKER-check-price-after-stop",
+      "name": "Check price answers after the worker was stopped",
+      "pass": true,
+      "detail": "SKIPPED: fewer than 9 dupes in this fixture"
+    }
+  ]
+}

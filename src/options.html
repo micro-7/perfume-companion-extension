@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Perfume Companion options</title>
+    <link rel="stylesheet" href="./options/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Perfume Companion</h1>
+
+      <section id="shops">
+        <h2>Shops</h2>
+        <p class="hint">
+          Prices are compared across these shops only. Give each shop's name and the address of its
+          search page, with <code>{query}</code> where the search words go, for example
+          <code>https://www.example.in/search?q={query}</code>.
+        </p>
+        <ul id="shop-list"></ul>
+        <p id="shop-empty" class="hint" hidden>No shops yet.</p>
+        <form id="shop-form" novalidate>
+          <label>Shop name
+            <input id="shop-name" type="text" autocomplete="off" />
+          </label>
+          <label>Search page address
+            <input id="shop-url" type="text" autocomplete="off" spellcheck="false" placeholder="https://www.example.in/search?q={query}" />
+          </label>
+          <div class="row">
+            <button type="submit" id="shop-add" class="primary">Add shop</button>
+            <span id="shop-result" role="status"></span>
+          </div>
+        </form>
+      </section>
+
+      <section id="gemini">
+        <h2>Gemini (main AI)</h2>
+        <p class="hint">
+          Get a free key at <a href="https://aistudio.google.com/apikey" target="_blank" rel="noreferrer">Google AI Studio</a>.
+          The key stays on this computer.
+        </p>
+        <div id="key-saved" hidden>
+          <span id="key-mask"></span>
+          <button type="button" id="key-replace">Replace key</button>
+          <button type="button" id="key-remove">Remove key</button>
+        </div>
+        <label id="key-entry">API key
+          <input id="key-input" type="password" autocomplete="off" spellcheck="false" />
+        </label>
+        <label>Model
+          <input id="gemini-model" type="text" spellcheck="false" />
+        </label>
+        <label>Max requests per minute
+          <input id="gemini-rpm" type="number" min="1" max="60" />
+        </label>
+      </section>
+
+      <section id="ollama">
+        <h2>Ollama (local backup)</h2>
+        <p class="hint">
+          Used automatically when the Gemini free limit runs out. Ollama must allow this extension:
+          set the environment variable <code>OLLAMA_ORIGINS</code> to include
+          <code id="origin"></code> and restart Ollama.
+        </p>
+        <label>Ollama address
+          <input id="ollama-url" type="text" spellcheck="false" />
+        </label>
+        <div class="row">
+          <button type="button" id="ollama-test">Test connection</button>
+          <span id="ollama-result" role="status"></span>
+        </div>
+        <label>Model
+          <select id="ollama-model"></select>
+        </label>
+        <p class="hint" id="ollama-picked"></p>
+      </section>
+
+      <div class="row">
+        <button type="button" id="save" class="primary">Save</button>
+        <span id="save-result" role="status"></span>
+      </div>
+      <p class="hint" id="build"></p>
+    </main>
+    <script type="module" src="./options/main.ts"></script>
+  </body>
+</html>

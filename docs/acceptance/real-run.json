@@ -1,0 +1,254 @@
+{
+  "when": "2026-11-21T12:21:58.823Z",
+  "model": "gemini-flash-lite-latest",
+  "rpm": 10,
+  "report": [
+    {
+      "url": "https://perfumepalace.in/products/christian-dior-sauvage-100ml-edt-for-men",
+      "title": "Christian Dior Sauvage 100ml Eau De Toilette for Men | Perfume Palace",
+      "seconds": 167,
+      "timedOut": false,
+      "view": {
+        "status": "",
+        "heading": "Sauvage – Christian Dior",
+        "concentration": "Eau De Toilette",
+        "notesError": "",
+        "description": "This fragrance starts off with a bright, zesty citrus punch mixed with a strong kick of fresh black pepper. As it settles, it becomes herbal and slightly smoky with a clean, confident woodiness that lasts all day.",
+        "tiers": {
+          "Top": [
+            "Calabrian bergamot",
+            "Pepper"
+          ],
+          "Heart": [
+            "Pink pepper",
+            "Geranium",
+            "Sichuan pepper",
+            "Elemi resin",
+            "Provençal lavender",
+            "Patchouli",
+            "Vetiver"
+          ],
+          "Base": [
+            "Ambrox"
+          ]
+        },
+        "badge": false,
+        "progress": "12 of 12 shops checked",
+        "pricesNote": [
+          "Not found (search unavailable)",
+          "Not found (search unavailable)",
+          "Not found (search unavailable)",
+          "Not found (search unavailable)",
+          "Not found (search unavailable)",
+          "Not found (search unavailable)"
+        ],
+        "prices": [
+          {
+            "shop": "Belvish",
+            "text": "Belvish: ₹8,550you save ₹3,850 compared with Perfume Palace",
+            "href": "https://belvish.com/products/dior-sauvage-edt-for-men?_pos=1&_sid=e7dfc43cb&_ss=r",
+            "reason": ""
+          },
+          {
+            "shop": "Perfume Network",
+            "text": "Perfume Network: ₹9,500you save ₹2,900 compared with Perfume Palace",
+            "href": "https://www.perfumenetwork.in/products/dior-sauvage-eau-de-toilette?_pos=4&_sid=812150c57&_ss=r",
+            "reason": ""
+          },
+          {
+            "shop": "Perfume Addiction",
+            "text": "Perfume Addiction: ₹9,799you save ₹2,601 compared with Perfume Palace",
+            "href": "https://perfumeaddiction.com/products/christian-dior-sauvage-edt-100ml-for-men?_pos=9&_sid=24b1daa16&_ss=r",
+            "reason": ""
+          },
+          {
+            "shop": "Perfume Palace",
+            "text": "Perfume Palace: ₹12,400You are here",
+            "href": "https://perfumepalace.in/products/christian-dior-sauvage-100ml-edt-for-men",
+            "reason": ""
+          },
+          {
+            "shop": "MOM Perfumes",
+            "text": "MOM Perfumes: ₹12,500",
+            "href": "https://momperfume.in/products/dior-sauvage-for-men-edt-100ml?_pos=4&_sid=be7aaa4af&_ss=r",
+            "reason": ""
+          },
+          {
+            "shop": "Splash Fragrance",
+            "text": "Splash Fragrance: ₹17,200",
+            "href": "https://splashfragrance.in/sauvage-by-dior-100ml-perfume-and-decant-online-india/",
+            "reason": ""
+          },
+          {
+            "shop": "AAR Fragrances",
+            "text": "AAR FragrancesNot found (search unavailable)the AI could not read the page (No AI provider is reachable); web search is unavailable",
+            "href": null,
+            "reason": "the AI could not read the page (No AI provider is reachable); web search is unavailable"
+          },
+          {
+            "shop": "Amazon",
+            "text": "AmazonNot found (search unavailable)the AI could not read the page (No AI provider is reachable); web search is unavailable",
+            "href": null,
+            "reason": "the AI could not read the page (No AI provider is reachable); web search is unavailable"
+          },
+          {
+            "shop": "Fragstalk",
+            "text": "FragstalkNot found (search unavailable)the AI could not read the page (No AI provider is reachable); web search is unavailable",
+            "href": null,
+            "reason": "the AI could not read the page (No AI provider is reachable); web search is unavailable"
+          },
+          {
+            "shop": "Friday Charm",
+            "text": "Friday CharmNot found (search unavailable)the AI could not read the page (No AI provider is reachable); web search is unavailable",
+            "href": null,
+            "reason": "the AI could not read the page (No AI provider is reachable); web search is unavailable"
+          },
+          {
+            "shop": "Nykaa",
+            "text": "NykaaNot found (search unavailable)the AI could not read the page (No AI provider is reachable); web search is unavailable",
+            "href": null,
+            "reason": "the AI could not read the page (No AI provider is reachable); web search is unavailable"
+          },
+          {
+            "shop": "Scentira",
+            "text": "ScentiraNot found (search unavailable)the perfume is not on the shop page; web search is unavailable",
+            "href": null,
+            "reason": "the perfume is not on the shop page; web search is unavailable"
+          }
+        ],
+        "dupesNote": [
+          "Fragrantica data wasn't available, so these are AI suggestions only.",
+          "Price not found",
+          "Price not found",
+          "Price not found"
+        ],
+        "dupesError": "",
+        "dupes": [
+          {
+            "name": "Club de Nuit Urban Man Elixir – Armaf",
+            "sim": "92% similar",
+            "confirmed": false,
+            "price": "Price not found",
+            "href": null
+          },
+          {
+            "name": "Asad – Lattafa",
+            "sim": "85% similar",
+            "confirmed": false,
+            "price": "Price not found",
+            "href": null
+          },
+          {
+            "name": "Najdia – Lattafa",
+            "sim": "82% similar",
+            "confirmed": false,
+            "price": "Price not found",
+            "href": null
+          },
+          {
+            "name": "Quorum Silver – Antonio Puig",
+            "sim": "75% similar",
+            "confirmed": false,
+            "price": "₹2,099 at Perfume Addiction",
+            "href": "https://perfumeaddiction.com/products/antonio-puig-quorum-silver-100ml-edt-for-men?_pos=1&_sid=06d7ce2f4&_ss=r"
+          }
+        ]
+      },
+      "geminiStatuses": {
+        "200": 10,
+        "429": 8,
+        "503": 8
+      },
+      "shopFetchStatuses": {
+        "MOM Perfumes": [
+          302,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "Scentira": [
+          302,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "Amazon": [
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "Fragstalk": [
+          302,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "Perfume Addiction": [
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "Belvish": [
+          302,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "Friday Charm": [
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "Perfume Network": [
+          302,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "Nykaa": [
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "AAR Fragrances": [
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "Splash Fragrance": [
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "Perfume Palace": [
+          200,
+          200,
+          200,
+          200
+        ]
+      }
+    }
+  ]
+}
