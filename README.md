@@ -2,6 +2,12 @@
 
 A personal Chrome extension (Manifest V3). Click the toolbar icon on any perfume page and a side panel shows the perfume's notes in plain English, cheaper dupes, and the best ₹ prices across your own list of shops.
 
+<p align="center">
+  <img src="docs/acceptance/screenshots/phase3-dupes.png" alt="The side panel for Dior Sauvage: Notes card with top, heart and base notes; Prices card with shops sorted cheapest first and savings compared with Amazon; Dupes card with similarity bars, Fragrantica marks and prices" width="360">
+  <br>
+  <em>The side panel on a Dior Sauvage page (from the automated tests, so the shops are test shops).</em>
+</p>
+
 The product summary is [Perfume Companion – Chrome Extension Spec.md](Perfume%20Companion%20–%20Chrome%20Extension%20Spec.md). The detailed requirements are in `openspec/specs/`, and the finished plan (proposal, design, tasks) is in `openspec/changes/archive/2026-11-21-perfume-companion/`.
 
 ## Build
@@ -86,3 +92,7 @@ The browser tests load the built extension into Playwright's Chromium (`npx play
 ## Secrets
 
 `npm run build` fails if something that looks like a Google API key is found in `src/`, `public/` or `dist/`.
+
+## License
+
+[MIT](LICENSE)
