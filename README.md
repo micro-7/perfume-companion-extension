@@ -4,8 +4,6 @@ A personal Chrome extension (Manifest V3). Click the toolbar icon on any perfume
 
 The product summary is [Perfume Companion – Chrome Extension Spec.md](Perfume%20Companion%20–%20Chrome%20Extension%20Spec.md). The detailed requirements are in `openspec/specs/`, and the finished plan (proposal, design, tasks) is in `openspec/changes/archive/2026-11-21-perfume-companion/`.
 
-For later work: [docs/loose-ends.md](docs/loose-ends.md) lists small housekeeping items left after v1, and [docs/future-scope.md](docs/future-scope.md) lists the known limitations with possible next steps.
-
 ## Build
 
 ```

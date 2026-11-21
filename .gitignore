@@ -4,3 +4,5 @@ dist
 dist-e2e
 e2e/.gemini-key
 e2e/shops.local.json
+docs/loose-ends.md
+docs/future-scope.md
